@@ -22,5 +22,37 @@
         height: 500px;
         padding-top:100px;
     }
+    img.slider-img{
+        height: 400px !important;
+        margin-left: 30px !important;
+
+    }
+    .custom-product{
+        height: 600px;
+    }
+    .slider-text{
+        background-color: #35443585 !important;
+        color: white !important;
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
+    .trending-img{
+        height: 100px;
+    }
+    .trending-item{
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    .detail-img{
+        height: 200px;
+    }
+    .search-box{
+        width: 500px !important;
+    }
+    a{
+        text-decoration:none !important;
+    }
 </style>
 </html>

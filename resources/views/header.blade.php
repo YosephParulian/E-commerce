@@ -1,3 +1,7 @@
+<?php
+use App\Http\Controllers\ProductController;
+$total = ProductController::cartItem();
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -12,14 +16,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Orders</a>
           </li>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <form action="/search" class="d-flex">
+            <input class="form-control search-box me-2" type="text" name="query" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart(0)</a>
+                <a class="nav-link" href="#">Cart({{ $total }})</a>
             </li>
         </ul>
       </div>
