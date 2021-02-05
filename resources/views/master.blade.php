@@ -54,5 +54,10 @@
     a{
         text-decoration:none !important;
     }
+    .cart-list-divider{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
 </style>
 </html>
